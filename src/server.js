@@ -1,11 +1,11 @@
 const knex = require('knex')
 const App = require('./app')
 
-const { PORT, DB_URL, NODE_ENV: environment } = require('./config')
+const { PORT, DATABASE_URL, NODE_ENV: environment } = require('./config')
 
 const database = knex({
     client: 'pg',
-    connection: DB_URL
+    connection: DATABASE_URL
 })
 
 const options = { environment }
