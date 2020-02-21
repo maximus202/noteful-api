@@ -5,7 +5,7 @@ const { PORT, DATABASE_URL, NODE_ENV: environment } = require('./config')
 
 const database = knex({
     client: 'pg',
-    connection: DATABASE_URL
+    connection: DATABASE_URL,
 })
 
 const options = { environment }
